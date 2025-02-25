@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><string name="app_name">laborator2</string>
+    <string name="default_text">Hello! This is the initial text.</string>
+    <string name="button_text">Change text</string>
+    <string name="hint_text">Enter new text...</string>
+    <string name="updated_text">Text has been updated!</string></resources>

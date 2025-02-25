@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">laborator2</string>
+    <string name="default_text">Salut! Acesta este textul inițial.</string>
+    <string name="button_text">Schimbă textul</string>
+    <string name="hint_text">Introdu un nou text...</string>
+    <string name="updated_text">Textul a fost modificat!</string>
+</resources>
