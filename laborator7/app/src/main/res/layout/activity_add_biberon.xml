@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewAddBiberon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAddBiberon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Titlu -->
+        <TextView
+            android:id="@+id/textViewAddBiberonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_biberon_title"
+            android:textSize="20sp"/>
+
+        <!-- EditText pentru Brand -->
+        <EditText
+            android:id="@+id/editTextBiberonBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/biberon_brand_hint"
+            android:minHeight="48dp"
+            android:padding="8dp"/>
+
+        <!-- EditText pentru Capacitate -->
+        <EditText
+            android:id="@+id/editTextBiberonCapacitate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/biberon_capacity_hint"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="8dp"/>
+
+        <!-- RatingBar pentru Rating -->
+        <TextView
+            android:id="@+id/textViewBiberonRatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/biberon_rating_label" />
+        <RatingBar
+            android:id="@+id/ratingBarBiberon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+        <!-- RadioGroup pentru tipul (anticolici: da/nu) -->
+        <TextView
+            android:id="@+id/textViewBiberonTypeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/biberon_type_label" />
+        <RadioGroup
+            android:id="@+id/radioGroupBiberonType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioButtonBiberonAnticolici"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/biberon_yes" />
+            <RadioButton
+                android:id="@+id/radioButtonBiberonNonAnticolici"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/biberon_no" />
+        </RadioGroup>
+
+        <!-- Buton de salvare -->
+        <Button
+            android:id="@+id/buttonSaveBiberon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_biberon" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddmAgaZinActivity">
+
+    <!-- ScrollView plasat corect în interiorul ConstraintLayout -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TextView + EditText pentru nume -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nume magazin:"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/editTextNume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:hint="Introdu numele magazinului" />
+
+            <!-- CheckBox pentru starea 'deschis' -->
+            <CheckBox
+                android:id="@+id/checkBoxDeschis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Magazin deschis" />
+
+            <!-- RadioGroup cu RadioButtons pentru tipul magazinului -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tip magazin: "
+                android:textSize="16sp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupTip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioAlimentar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alimentar" />
+
+                <RadioButton
+                    android:id="@+id/radioElectronice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electronice" />
+
+                <RadioButton
+                    android:id="@+id/radioHaine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Haine" />
+            </RadioGroup>
+
+            <!-- Spinner pentru anul înființării -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="An înființare:"
+                android:textSize="16sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerAn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp" />
+
+            <!-- RatingBar pentru evaluare -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rating magazin:"
+                android:textSize="16sp"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1.0" />
+
+            <!-- Switch -->
+            <Switch
+                android:id="@+id/switchTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Switch - test" />
+
+            <!-- ToggleButton -->
+            <ToggleButton
+                android:id="@+id/toggleButtonTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="ON"
+                android:textOff="OFF" />
+
+            <!-- Button pentru creare obiect și trimitere înapoi -->
+            <Button
+                android:id="@+id/buttonCreeaza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Creează și returnează obiect" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
