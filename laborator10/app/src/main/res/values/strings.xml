@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">laborator10</string>
+    <string-array name="forecast_options">
+        <item>1 zi</item>
+        <item>5 zile</item>
+        <item>10 zile</item>
+    </string-array>
+    <string name="hint_city">Enter city name</string>
+    <string name="btn_get_key">Get Location Key</string>
+    <string name="label_location_key">Location Key:</string>
+    <string name="btn_get_forecast">Get Forecast</string>
+    <string name="label_forecast">Forecast:</string>
+
+</resources>

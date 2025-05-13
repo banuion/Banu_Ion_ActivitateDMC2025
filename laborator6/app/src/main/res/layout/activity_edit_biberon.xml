@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Brand -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Brand biberon:"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/editTextBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:hint="Introdu brandul biberonului" />
+
+        <!-- Anticolici -->
+        <CheckBox
+            android:id="@+id/checkBoxAnticolici"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biberon anticolici" />
+
+        <!-- Tip material -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tip material: "
+            android:textSize="16sp"/>
+        <RadioGroup
+            android:id="@+id/radioGroupMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioPlastic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plastic" />
+            <RadioButton
+                android:id="@+id/radioSticla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sticlă" />
+            <RadioButton
+                android:id="@+id/radioSilicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silicone" />
+        </RadioGroup>
+
+        <!-- Capacitate -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Capacitate (ml):"
+            android:textSize="16sp"/>
+        <Spinner
+            android:id="@+id/spinnerCapacitate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+
+        <!-- Rating -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rating biberon:"
+            android:textSize="16sp"/>
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0" />
+
+        <!-- Switch & Toggle (opțional) -->
+        <Switch
+            android:id="@+id/switchTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Switch - test" />
+        <ToggleButton
+            android:id="@+id/toggleButtonTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="ON"
+            android:textOff="OFF" />
+
+        <!-- Buton de salvare -->
+        <Button
+            android:id="@+id/buttonCreeaza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvează" />
+
+    </LinearLayout>
+</ScrollView>

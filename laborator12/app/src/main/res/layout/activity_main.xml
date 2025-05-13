@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnMapPins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Map: Add Pins" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerShape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/shape_options" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <Button
+        android:id="@+id/btnMapShape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Map: Draw Shape" />
+
+</LinearLayout>

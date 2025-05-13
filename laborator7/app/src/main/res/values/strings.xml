@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">laborator7</string>
+    <string name="add_biberon_title">Adaugă Biberon</string>
+    <string name="biberon_brand_hint">Introdu brandul</string>
+    <string name="biberon_capacity_hint">Introdu capacitatea (ml)</string>
+    <string name="biberon_rating_label">Rating:</string>
+    <string name="biberon_type_label">Este anticolici?</string>
+    <string name="biberon_yes">Da</string>
+    <string name="biberon_no">Nu</string>
+    <string name="save_biberon">Salvează</string>
+    <string name="add_biberon_button">Adaugă Biberon</string>
+    <string name="open_settings_button">Setări</string>
+    <string name="text_size_label">Dimensiune text:</string>
+    <string name="enter_text_size">Introdu dimensiunea dorită (ex: 16)</string>
+    <string name="text_color_label">Culoare text (hex):</string>
+    <string name="enter_text_color">Introdu culoarea (ex: #FF0000)</string>
+    <string name="save_settings">Salvează setările</string>
+
+</resources>

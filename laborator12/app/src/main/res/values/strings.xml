@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">laborator12</string>
+    <string-array name="shape_options">
+        <item>Polygon</item>
+        <item>Circle</item>
+    </string-array>
+</resources>

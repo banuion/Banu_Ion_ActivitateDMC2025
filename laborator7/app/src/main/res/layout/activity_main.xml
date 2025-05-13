@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Buton pentru adăugarea unui Biberon nou -->
+    <Button
+        android:id="@+id/buttonAddBiberon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_biberon_button" />
+
+    <!-- Buton pentru deschiderea setărilor -->
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/open_settings_button" />
+
+    <!-- ListView pentru afișarea biberoanelor -->
+    <ListView
+        android:id="@+id/listViewBiberoane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
